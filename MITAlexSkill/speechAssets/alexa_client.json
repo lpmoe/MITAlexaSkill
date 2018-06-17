@@ -1,0 +1,154 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "action",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "add",
+              "synonyms": []
+            }
+          }
+        ]
+      },
+      {
+        "name": "word",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "description",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "details",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "detail",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "detail description",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "instructor",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "instructors",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "schedule",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "units",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "prerequisites",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NoIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StartOverIntent",
+        "samples": [
+          "start over",
+          "restart",
+          "start again",
+          "play again"
+        ]
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": [
+          "stop",
+          "off",
+          "shut up"
+        ]
+      },
+      {
+        "name": "AMAZON.YesIntent",
+        "samples": []
+      },
+      {
+        "name": "GetMITCourseIntent",
+        "samples": [
+          "I want to know more about course {courseid}",
+          "tell me about course {courseid}",
+          "{word}",
+          "{courseid}"
+        ],
+        "slots": [
+          {
+            "name": "courseid",
+            "type": "AMAZON.NUMBER"
+          },
+          {
+            "name": "word",
+            "type": "word"
+          }
+        ]
+      },
+      {
+        "name": "ScheduleCourseIntent",
+        "samples": [
+          "{action} to the calendar",
+          "{action}"
+        ],
+        "slots": [
+          {
+            "name": "action",
+            "type": "action"
+          }
+        ]
+      }
+    ],
+    "invocationName": "m i t"
+  }
+}

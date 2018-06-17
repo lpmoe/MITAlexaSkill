@@ -1,0 +1,158 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "period",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "am",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "pm",
+              "synonyms": []
+            }
+          }
+        ]
+      },
+      {
+        "name": "window",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "evening",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "morning",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "afternoon",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "breakfast",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "dinner",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "day",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "wake",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "lunch",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AddScheduleItIntent",
+        "samples": [
+          "{starttime} to {endtime}  on {day}",
+          "Add to the schedule from {starttime} to {endtime} on {day}",
+          "I want to schedule it from {starttime}  to {endtime} on {day}  ",
+          "{starttime}  to {endtime} "
+        ],
+        "slots": [
+          {
+            "name": "starttime",
+            "type": "AMAZON.TIME"
+          },
+          {
+            "name": "endtime",
+            "type": "AMAZON.TIME"
+          },
+          {
+            "name": "day",
+            "type": "AMAZON.DayOfWeek"
+          },
+          {
+            "name": "period",
+            "type": "period"
+          }
+        ]
+      },
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "FindScheduleItIntent",
+        "samples": [
+          "I would like to set up a meeting with {name}",
+          "I would like to schedule it on {day} in the {window}",
+          "I want to set up a meeting with {name}",
+          "I want to schedule it on {day} in the {window}",
+          "I want to schedule it on {day} in the {window} for {number} minutes",
+          "I would like to schedule it on {day} in the {window} for {number} hour",
+          "I want to schedule it on {day} in the {window} for {number} hour"
+        ],
+        "slots": [
+          {
+            "name": "name",
+            "type": "AMAZON.US_FIRST_NAME"
+          },
+          {
+            "name": "day",
+            "type": "AMAZON.DayOfWeek"
+          },
+          {
+            "name": "window",
+            "type": "window"
+          },
+          {
+            "name": "number",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      }
+    ],
+    "invocationName": "schedule it"
+  }
+}
