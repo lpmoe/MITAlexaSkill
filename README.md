@@ -8,6 +8,7 @@ It will also allow the user to add the course to the calendar.
 Alexa Lambda Service
 Alexa service will goes through the questions and answers nodes.
 function askMIT 		 //Ask the first question
+
 function newSessionHandler  	// set state to start up and  welcome the user
 function startSkillHandlers 	// Call at the start of the skill, picks and ask first question for the user
 askQuestionHandlers    		// user will have been asked a question when this intent is called. We want to look at their yes/no
