@@ -1,10 +1,11 @@
-#Alexa MIT Skill Version 1.0
-This skill will allow a user to retrieve MIT courses information using the course number. The user can find out course title, course description and course instructor.
-It will also allow the user to add the course to the calendar.
+# Alexa MIT Skill Version 1.0
+
+This skill will allow a user to retrieve MIT courses information using the course number. The user can find out course title, course description and course instructor.It will also allow the user to add the course to the calendar.
 
 Alexa Lambda Service
 Alexa service will goes through the questions and answers nodes.
 function askMIT 		 //Ask the first question
+
 function newSessionHandler  	// set state to start up and  welcome the user
 function startSkillHandlers 	// Call at the start of the skill, picks and ask first question for the user
 askQuestionHandlers    		// user will have been asked a question when this intent is called. We want to look at their yes/no
