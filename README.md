@@ -9,10 +9,6 @@ function newSessionHandler  	// set state to start up and  welcome the user
 function startSkillHandlers 	// Call at the start of the skill, picks and ask first question for the user
 askQuestionHandlers    		// user will have been asked a question when this intent is called. We want to look at their yes/no
 
-				// response and then ask another question. If we have asked more than the requested number of questions Alexa will
-
-				// make a choice, inform the user and then ask if they want to start again
-
 GetMITCourseIntent     		// This function will give information on the MIT courses
 function QueryMitApi   		// Make https call to get MIT course information
 
