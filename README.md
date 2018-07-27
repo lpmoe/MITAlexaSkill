@@ -5,11 +5,11 @@ This skill will allow a user to retrieve MIT courses information using the cours
 Alexa Lambda Service
 Alexa service will goes through the questions and answers nodes.
 function askMIT 		 //Ask the first question
-
-function newSessionHandler  	// set state to start up and  welcome the user
-function startSkillHandlers 	// Call at the start of the skill, picks and ask first question for the user
+<p>
+function newSessionHandler  	// set state to start up and  welcome the user<br>
+function startSkillHandlers 	// Call at the start of the skill, picks and ask first question for the user<br>
 askQuestionHandlers    		// user will have been asked a question when this intent is called. We want to look at their yes/no
-
+<p>
 GetMITCourseIntent     		// This function will give information on the MIT courses
 function QueryMitApi   		// Make https call to get MIT course information
 
